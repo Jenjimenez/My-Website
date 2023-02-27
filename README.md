@@ -1,2 +1,2 @@
 # My-Website
-Update to CV Website
+Practicing HTML and CSS
