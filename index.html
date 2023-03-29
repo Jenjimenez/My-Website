@@ -1,57 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Jennifer Jimenez</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" href="css/favicon.ico">
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat+Alternates&family=Sacramento&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Merriweather|Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const menuItems = document.querySelector('.menu-items');
+        const menuItem = document.querySelectorAll('.menu-item');
+        
+        menuBtn.addEventListener('click', () => {
+          menuBtn.classList.toggle('open');
+          menuItems.classList.toggle('open');
+        });
+        
+        menuItem.forEach(item => {
+          item.addEventListener('click', () => {
+            menuBtn.classList.toggle('open');
+            menuItems.classList.toggle('open');
+          });
+        });
+        </script>
+</head>
+<body>
+    <div class="top-container">
+        <img class="top-cloud" src="img/cloud.png" alt="cloud-img">
+        <h1>I'm Jennifer.</h1>
+        <h2>A UX Designer/Developer based in Dallas, TX.</h2>
+        <img class="bottom-cloud" src="img/cloud.png" alt="cloud-img">
+        <img class="computer" src="img/computer.png" alt="computer-img">
+    </div>
 
-    </head>
-    <body>
-        <div class="top-container">
-            <img class="top-cloud"src="images/cloud.png" alt="cloud-img">
-            <h1>I'm Jennifer.</h1>
-            <h2>a <span class="pro">pro</span>grammer.</h2>
-            <img class="bottom-cloud"src="images/cloud.png" alt="cloud-img">
-            <img src="images/big_cloud.png" alt="big_cloud-img">
+    <div class="middle-container">
+        <div class="profile">
+            <img class="profile-pic" src="img/profile.png" alt="profile-img">
+            <h2>Hello.</h2>
+            <p class="intro">I am a [Your Profession/Title] with experience in [Your Skills/Expertise].</p>
         </div>
-        <div class="middle-container">
-            <div class="profile">
-              <img class="profile-pic" src="images/Jennifer.png" alt="jennifer-img">
-              <h2>Hello.</h2>
-              <p class="intro">Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
+
+        <hr>
+
+        <div class="skills">
+            <h2>My Skills.</h2>
+            <div class="skill-row">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>[Programming Language 1]</li>
+                    <li>[Programming Language 2]</li>
+                    <li>[Programming Language 3]</li>
+                </ul>
             </div>
-            <hr>
-            <div class="skills">
-              <h2>My Skills.</h2>
-              <div class="skill-row">
-                <img class="computer" src="images/computer.png" alt="computer-img">
-                <h3>Lorem & Ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros. Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-              </div>
-              <div class="skill-row">
-                <img class="art" src="images/art.png" alt="art-img">
-                <h3>Lorem Ipsum Dolor</h3>
-                <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam. Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-              </div>
+            <div class="skill-row">
+                <h3>Web Development</h3>
+                <ul>
+                    <li>[Web Framework 1]</li>
+                    <li>[Web Framework 2]</li>
+                    <li>[Web Framework 3]</li>
+                </ul>
             </div>
-            <hr>
-            <div class="contact-me">
-              <h2>Get In Touch</h2>
-              <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-              <p class="contact-me-txt">Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-              <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
-            </div>
-          </div>
-          <div class="bottom-container">
-            <a class="footer-link" img="images/linkedin.png" href="https://www.linkedin.com/jenniferjimenezusf"><img src="images/linkedin.png" alt="linkedin-img" class="footer-link"></a>
-            <a class="footer-link" img="images/github.png" href="https://Github.com/jenjimenez"><img src="images/github.png" alt="github-img" class="footer-link"></a>
-            <a class="footer-link" img="images/world-wide-web.png" href="https://www.appbrewery.co/"><img src="images/world-wide-web.png" alt="web-img" class="footer-link"></a>
-            <p class="footer-credits">© 2022 Jennifer Jimenez.</p>
-          </div>
-    </body>
+        </div>
+    </div>
+
+    <div class="bottom-container">
+        <a class="btn" href="#">Contact Me</a>
+        <p class="pro">A Professional Portfolio by [Your Name]</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
