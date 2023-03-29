@@ -17,6 +17,7 @@ h1 {
     font-weight: bold;
     color: var(--primary-color);
     margin-bottom: 1rem;
+    margin-left: 20px;
     line-height: 2;
     /* also can do margin: 0 auto; */
 }
@@ -27,6 +28,7 @@ h2 {
     font-weight: bold;
     color: var(--secondary-color);
     margin-bottom: 1rem;
+    margin-left: 20px;
     padding-bottom: 10px;
 }
 
