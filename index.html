@@ -1,57 +1,61 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Jennifer Jimenez</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" href="css/favicon.ico">
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat+Alternates&family=Sacramento&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer Jimenez | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-yBXZ5r5r5/XxE6ZZwU6b26UJqRW3Wx++xGKmPUG9I14QZkhJ6ZfR/WnJFdxkk/yT2j+EmlfONtoRrkzfkeD9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="#home" id="navbar__logo">Jennifer Jimenez</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span> <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#home" class="navbar__links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#about" class="navbar__links" id="about-page">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#skills" class="navbar__links" id="skills-page">Skills</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="#contact" class="button" id="contact-page">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    </head>
-    <body>
-        <div class="top-container">
-            <img class="top-cloud"src="images/cloud.png" alt="cloud-img">
-            <h1>I'm Jennifer.</h1>
-            <h2>a <span class="pro">pro</span>grammer.</h2>
-            <img class="bottom-cloud"src="images/cloud.png" alt="cloud-img">
-            <img src="images/big_cloud.png" alt="big_cloud-img">
-        </div>
-        <div class="middle-container">
-            <div class="profile">
-              <img class="profile-pic" src="images/Jennifer.png" alt="jennifer-img">
-              <h2>Hello.</h2>
-              <p class="intro">Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">Hello, I'm Jennifer Jimenez</h1>
+                    <h3 class="home__subtitle">Web Developer</h3>
+                    <p class="home__description">I am a highly motivated and enthusiastic web developer with a passion for creating interactive and dynamic websites. I specialize in HTML, CSS, JavaScript and ReactJS.</p>
+                    <a href="#contact" class="button">Contact Me</a>
+                </div>
+                <div class="home__img">
+                    <img src="images/profile.jpg" alt="">
+                </div>
             </div>
-            <hr>
-            <div class="skills">
-              <h2>My Skills.</h2>
-              <div class="skill-row">
-                <img class="computer" src="images/computer.png" alt="computer-img">
-                <h3>Lorem & Ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros. Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-              </div>
-              <div class="skill-row">
-                <img class="art" src="images/art.png" alt="art-img">
-                <h3>Lorem Ipsum Dolor</h3>
-                <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam. Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-              </div>
-            </div>
-            <hr>
-            <div class="contact-me">
-              <h2>Get In Touch</h2>
-              <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-              <p class="contact-me-txt">Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-              <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
-            </div>
-          </div>
-          <div class="bottom-container">
-            <a class="footer-link" img="images/linkedin.png" href="https://www.linkedin.com/jenniferjimenezusf"><img src="images/linkedin.png" alt="linkedin-img" class="footer-link"></a>
-            <a class="footer-link" img="images/github.png" href="https://Github.com/jenjimenez"><img src="images/github.png" alt="github-img" class="footer-link"></a>
-            <a class="footer-link" img="images/world-wide-web.png" href="https://www.appbrewery.co/"><img src="images/world-wide-web.png" alt="web-img" class="footer-link"></a>
-            <p class="footer-credits">© 2022 Jennifer Jimenez.</p>
-          </div>
-    </body>
-</html>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="images/about.jpg" alt="">
+                </div>
+                <div>
+                    <h2 class="about__subtitle">I'm Jennifer Jimenez</h2>
+                    <p class="about__text">I am a highly motivated and enthusiastic web developer with a passion for creating interactive and
